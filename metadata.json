@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Instagram Carousel Generator",
+  "description": "Create beautiful Instagram carousel posts from a cover photo, title, and prose. The app intelligently splits your text into readable slides using AI.",
+  "requestFramePermissions": []
+}
