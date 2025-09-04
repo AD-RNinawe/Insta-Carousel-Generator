@@ -21,7 +21,7 @@ const Slide = forwardRef<HTMLDivElement, SlideProps>(({ slide }, ref) => {
 
   return (
     <div ref={ref} className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-8 md:p-10 rounded-lg">
-      <p className="text-white text-xl md:text-2xl font-medium leading-relaxed text-center">
+      <p className="text-white text-lg md:text-xl font-medium leading-relaxed text-center">
         {slide.text}
       </p>
     </div>

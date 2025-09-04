@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 
 // Ensure the API key is available. In a real app, you'd have a more robust way to handle this.
@@ -9,11 +8,11 @@ if (!process.env.API_KEY) {
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const PROSE_CHUNK_PROMPT = `
-You are an expert social media content editor. Your task is to split a long piece of prose into smaller, readable chunks, with each chunk suitable for a single Instagram carousel slide.
+You are an expert social media content editor. Your task is to split a long piece of prose into smaller, readable chunks, with each chunk suitable for a single Instagram carousel slide. The goal is to use as few slides as possible while keeping the text on each slide clearly readable.
 
 Rules:
-1.  Each chunk should be no more than 280 characters.
-2.  Try to break the text at natural points, like the end of sentences or paragraphs. Avoid splitting sentences in the middle if possible.
+1.  Each chunk should be between 300 and 450 characters. Aim for the higher end of this range to minimize the total number of slides.
+2.  Prioritize breaking the text at natural points, like the end of sentences or paragraphs. Avoid splitting sentences in the middle.
 3.  Do not add any extra commentary, greetings, or explanations.
 4.  The output must be a JSON array of strings, where each string is a chunk of text for a slide.
 
