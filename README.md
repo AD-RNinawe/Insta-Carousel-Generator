@@ -1,6 +1,4 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+Description: An app that helps you to publish small stories into a carousel post given you give it the prose, cover photo and the title for the prose. 
 
 # Run and deploy your AI Studio app
 
